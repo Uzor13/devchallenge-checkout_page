@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap"
+          rel="stylesheet">
+    <title>Checkout</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Checkout</h1>
+    <div class="grid-container">
+        <div id="msg"></div>
+        <section class="card">
+            <div class="items-section">
+                <figure>
+                    <img src="img/photo1.png" alt="bag">
+                </figure>
+                <div class="item">
+                    <div>
+                        <h4>Vintage Bag</h4>
+                        <p>$59.99 <span> <span style="text-decoration: line-through;">$94.99</span></span></p>
+                    </div>
+                    <div class="item-counter__box">
+                        <div class="mini-card">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="count">
+                            1
+                        </div>
+                        <div class="mini-card">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-section">
+                <figure>
+                    <img src="img/photo2.png" alt="bag">
+                </figure>
+                <div class="item">
+                    <div>
+                        <h4>Levi Shoes</h4>
+                        <p>$74.99 <span> <span style="text-decoration: line-through;">$124.99</span></span></p>
+                    </div>
+                    <div class="item-counter__box">
+                        <div class="mini-card">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="count">
+                            1
+                        </div>
+                        <div class="mini-card">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+            <div class="summary">
+                <p>Total</p>
+                <p>$148.88</p>
+            </div>
+        </section>
+        <form class="form" method="post" onsubmit="alert('Form Submitted')">
+            <h3>Contact Information</h3>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your email..." required>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone" required>
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <h3 class="shipping">Shipping Address</h3>
+            <div class="input-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" value="Rodney Cotton" required>
+                <i class="fas fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="input-group">
+                <label for="addy">Address</label>
+                <input type="text" id="addy" placeholder="Your address" required>
+                <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Your city" required>
+                <i class="fas fa-city" aria-hidden="true"></i>
+            </div>
+            <div class="input-group__double">
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Your country" required>
+                    <i class="fas fa-globe-africa" aria-hidden="true"></i>
+                </div>
+                <div class="input-group">
+                    <label for="code">Postal code</label>
+                    <input type="number" id="code" placeholder="Your postal code" required>
+                    <i class="fas fa-shipping-fast" aria-hidden="true"></i>
+                </div>
+            </div>
+            <input type="checkbox" id="check" required>
+            <label for="check">Save this information for next time</label>
+            <input class="btn" type="submit" value="Continue">
+        </form>
+    </div>
+    <footer>Uzochukwu Precious @ DevChallenges.io</footer>
+</div>
+</body>
+</html>

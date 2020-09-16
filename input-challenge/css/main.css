@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 0 25px 0 25px;
+    margin: 0 auto 0 auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.title {
+    margin-top: 5%;
+    color: #4E5150;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-template-areas: 'card'
+    'form';
+}
+
+.card {
+    width: 360px;
+    height: 489px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 20px;
+    grid-area: card;
+}
+
+.items-section {
+    display: flex;
+    padding: 5px;
+}
+
+figure img {
+    width: 140px;
+    height: 140px;
+    border-radius: 13px;
+    margin: 5px;
+}
+
+.item {
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4E5150;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item p {
+    color: #F2994A;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.item p span {
+    color: #4E5150;
+    font-size: 16px;
+}
+
+.item-counter__box {
+    width: 122px;
+    height: 49px;
+    border: 2px solid #828282;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.mini-card {
+    background: #E0E0E0;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid #BDBDBD;;
+    margin-top: 20px;
+}
+
+.summary p {
+    padding-top: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.form {
+    grid-area: form;
+}
+
+.form h3 {
+    color: #333333;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group input {
+    width: 350px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid #828282;
+    padding-left: 45px;
+}
+
+.input-group label {
+    padding-top: 20px;
+    color: #4F4F4F;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    padding: 9px 18px;
+    color: #828282;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #828282;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.input-group input[value] {
+    padding-left: 45px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.shipping {
+    margin-top: 45px;
+}
+
+.input-group__double {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 15px);
+}
+
+.input-group__double .input-group input {
+    width: 160px;
+    height: 40px;
+}
+
+input[type="checkbox"] {
+    margin-top: 20px;
+}
+
+label[for='check'] {
+    color: #4F4F4F;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn {
+    width: 120px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: #F2994A;
+    border-radius: 12px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+footer {
+    color: #A9A9A9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 495px) {
+    .container {
+        padding: 0 55px 0 55px;
+    }
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+        grid-template-areas: 'form card'
+    }
+
+    .form h3 {
+        font-size: 18px;
+        color: #333333;
+    }
+    .input-group input {
+        width: 465px;
+    }
+    .input-group__double {
+        width: calc(100% - 95px);
+    }
+    .input-group__double .input-group input {
+        width: 225px;
+    }
+}
