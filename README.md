@@ -81,6 +81,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{uzor.codes})
-- GitHub [@your-username](https://{github.com/uzor13})
+[ Website] (https://{uzor.codes})
+- [GitHub] (https://{github.com/uzor13})
 
